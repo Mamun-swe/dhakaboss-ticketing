@@ -1,8 +1,16 @@
 import React, { Component } from 'react';
 import './index.css';
-import Logo from '../../../assets/static/logo.png';
 import { Link } from 'react-router-dom';
 import $ from 'jquery';
+
+import Logo from '../../../assets/static/logo.png';
+import BarIcon from '../../../assets/icons/bar.png';
+import BusIcon from '../../../assets/icons/bus.png';
+import TrainIcon from '../../../assets/icons/train.png';
+import FlightIcon from '../../../assets/icons/flight.png';
+import CreateUserIcon from '../../../assets/icons/user-add.png';
+import LoginIcon from '../../../assets/icons/login.png';
+import LogoutIcon from '../../../assets/icons/logout.png';
 
 
 class Nav extends Component {
@@ -16,7 +24,7 @@ class Nav extends Component {
     }
 
     closeMenu() {
-        $('.side-menu').removeClass('open-side-menu');
+        $('.side-menu').css('right', "-100%");
     }
     render() {
         return (
@@ -45,8 +53,8 @@ class Nav extends Component {
                                             <li><Link to="/">Create an account</Link></li>
                                         </ul>
                                     </div>
-                                    <div className="d-lg-none">
-                                        <i className="fas fa-bars menu-bar" onClick={this.openMenu}></i>
+                                    <div className="d-lg-none menu-bar">
+                                        <img src={BarIcon} alt="Menu bar icon" onClick={this.openMenu} />
                                     </div>
                                 </div>
                             </div>
@@ -56,12 +64,21 @@ class Nav extends Component {
                 {/* End Top Nav */}
 
                 {/* Side Menu */}
-                <div className="side-menu">
+                <div className="side-menu d-lg-none">
                     <div className="close-section text-left">
                         <span className="close-icon" onClick={this.closeMenu}>&times;</span>
                     </div>
+                    <ul>
+                        <li><Link to="/"><img src={BusIcon} alt="Bus Icon" />buses</Link></li>
+                        <li><Link to="/"><img src={TrainIcon} alt="Train Icon" />train</Link></li>
+                        <li><Link to="/"><img src={FlightIcon} alt="Plan Icon" />flight</Link></li>
+                        <li><Link to="/"><img src={CreateUserIcon} alt="User Create Icon" />create an account</Link></li>
+                        <li><Link to="/"><img src={LoginIcon} alt="User Login Icon" />login</Link></li>
+                        <li><Link to="/"><img src={LogoutIcon} alt="User Logout Icon" />logout</Link></li>
+                    </ul>
                 </div>
                 {/* End Side Menu */}
+                <div className="break"></div>
             </div>
         );
     }

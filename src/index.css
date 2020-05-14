@@ -12,3 +12,33 @@
     font-family: roboto-bold;
     src: url('./assets/fonts/Roboto/Roboto-Bold.ttf');
 }
+
+@media(min-width: 992px) {
+    .container {
+        min-width: 1000px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        min-width: 1180px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .container {
+        min-width: 1240px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .container {
+        min-width: 1400px;
+    }
+}
+
+@media(min-width: 1480px) {
+    .container {
+        min-width: 1440px;
+    }
+}
