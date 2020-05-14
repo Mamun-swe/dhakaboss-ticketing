@@ -1,0 +1,50 @@
+.footer .container {
+    border-top: 1px solid red;
+}
+
+.footer h5 {
+    font-family: roboto-bold;
+}
+
+.footer ul {
+    margin: 0px;
+    padding: 0;
+}
+
+.footer ul li {
+    list-style: none;
+    margin-bottom: 5px;
+}
+
+.footer ul li a {
+    width: 100%;
+    color: red;
+    font-size: 15px;
+    font-family: roboto-regular;
+}
+
+.footer .social ul li {
+    float: left;
+    margin-right: 10px;
+}
+
+.footer .social ul li a i {
+    color: #fff;
+    background: red;
+    padding: 7px 8px;
+    font-size: 15px;
+}
+
+.footer .social ul li a .fa-facebook-f {
+    font-size: 14px;
+    padding: 7.5px 11px;
+}
+
+.footer .copyright p {
+    font-size: 15px;
+    font-family: roboto-regular;
+}
+
+.footer .copyright p a {
+    color: red;
+}
