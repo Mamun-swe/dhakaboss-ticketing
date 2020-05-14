@@ -1,0 +1,65 @@
+.home-nav .nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    border-bottom: 1px solid red;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    z-index: 9;
+}
+
+.home-nav .nav img {
+    height: 30px;
+    width: 180px;
+}
+
+.home-nav .nav ul {
+    margin: 0;
+    padding-top: 3px;
+}
+
+.home-nav .nav ul li {
+    list-style: none;
+    float: left;
+}
+
+.home-nav .nav ul li a {
+    font-size: 15px;
+    text-transform: capitalize;
+    font-family: roboto-bold;
+    color: red;
+    text-decoration: none;
+    padding: 5px 15px;
+    margin-left: 10px;
+}
+
+.home-nav .nav .menu-bar {
+    font-size: 20px;
+    padding: 5px 10px;
+    cursor: pointer;
+    color: red;
+}
+
+/* Side Menu */
+
+.home-nav .side-menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+    z-index: 99;
+    transition: 0.3s;
+}
+
+.home-nav .side-menu .close-section .close-icon {
+    color: red;
+    font-size: 50px;
+    padding: 0px 25px;
+    cursor: pointer;
+}
+
+/* End Side Menu */
