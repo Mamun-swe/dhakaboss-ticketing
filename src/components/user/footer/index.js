@@ -45,9 +45,9 @@ class Footer extends Component {
                         <div className="col-12 col-md-6 col-lg-3 social">
                             <h5 className="mb-3">Follow us</h5>
                             <ul>
-                                <li><a target="_blank" href="#"><i className="rounded-circle fab fa-facebook-f"></i></a></li>
-                                <li><a target="_blank" href="#"><i className="rounded-circle fab fa-linkedin-in"></i></a></li>
-                                <li><a target="_blank" href="#"><i className="rounded-circle fab fa-instagram"></i></a></li>
+                                <li><a target="_blank" href="/"><i className="rounded-circle fab fa-facebook-f"></i></a></li>
+                                <li><a target="_blank" href="/"><i className="rounded-circle fab fa-linkedin-in"></i></a></li>
+                                <li><a target="_blank" href="/"><i className="rounded-circle fab fa-instagram"></i></a></li>
                             </ul>
                         </div>
 

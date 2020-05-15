@@ -91,7 +91,7 @@ class Home extends Component {
                                     packages.length ?
                                         packages.map(post =>
                                             <div className="col-12 col-sm-6 col-md-4 col-lg-3 package-column" key={post}>
-                                                <Link to="">
+                                                <Link to="/">
                                                     <div className="card">
                                                         <div className="card-body">
                                                             <div className="img-box text-center mb-2">

@@ -35,6 +35,18 @@
     margin-left: 10px;
 }
 
+.home-nav .nav ul li button {
+    font-size: 15px;
+    text-transform: capitalize;
+    font-family: roboto-bold;
+    color: red;
+    text-decoration: none;
+    padding: 5px 15px;
+    margin-left: 10px;
+    border: 0;
+    background: none;
+}
+
 .home-nav .nav .menu-bar img {
     width: 24px;
     height: 24px;
@@ -82,7 +94,26 @@
     margin-bottom: 5px;
 }
 
+.home-nav .side-menu ul li .btn {
+    font-size: 15px;
+    text-transform: capitalize;
+    font-family: roboto-bold;
+    color: red;
+    text-decoration: none;
+    display: block;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+    padding-left: 0;
+    width: 100%;
+    text-align: left;
+}
+
 .home-nav .side-menu ul li a img {
+    margin-right: 15px;
+}
+
+.home-nav .side-menu ul li .btn img {
     margin-right: 15px;
 }
 
@@ -91,3 +122,46 @@
 .home-nav .break {
     height: 81px;
 }
+
+/* Modal */
+
+.home-nav .auth-modal .title h4 {
+    color: red;
+    font-family: roboto-medium;
+}
+
+.home-nav .auth-modal .title img {
+    cursor: pointer;
+}
+
+.home-nav .auth-modal form small {
+    font-style: 14px;
+    font-family: roboto-bold;
+}
+
+.home-nav .auth-modal form .form-control {
+    font-size: 14px;
+    height: 40px;
+    color: red;
+    font-family: roboto-medium;
+    border: 1px solid red;
+}
+
+.home-nav .auth-modal form .btn {
+    font-family: roboto-medium;
+}
+
+.home-nav .auth-modal .links p {
+    color: red;
+    margin-bottom: 0;
+    font-size: 15px;
+    font-family: roboto-medium;
+    cursor: pointer;
+}
+
+.home-nav .auth-modal .links p:hover {
+    text-decoration: underline;
+    text-decoration-color: red;
+}
+
+/* End Modal */
