@@ -12,21 +12,57 @@ import DownArrowIcon from '../../../assets/icons/right.png';
 class Transports extends Component {
     constructor(props) {
         super(props);
-        this.state = {}
+        this.state = {
+            cabinBags: 0,
+            checkedBags: 0,
+            maxDuration: 0
+        }
     }
 
     componentDidMount() {
         $('.toggle-transport-items').hide()
         $('.toggle-bags-items').hide()
+        $('.toggle-duration-items').hide()
+        $('.toggle-days-items').hide()
     }
 
-    handleTransport = () => {
+    handleToggleTransport = () => {
         $('.toggle-transport-items').toggle(200)
         $('.toggle-transport-img').toggleClass('down')
     }
-    handleBags() {
+    handleToggleBags = () => {
         $('.toggle-bags-items').toggle(200)
         $('.toggle-bags-img').toggleClass('down')
+    }
+
+    cabinBagInc = () => {
+        this.setState({ cabinBags: this.state.cabinBags + 1 })
+    }
+
+    cabinBagDesc = () => {
+        this.setState({ cabinBags: this.state.cabinBags - 1 })
+    }
+
+    checkedBagInc = () => {
+        this.setState({ checkedBags: this.state.checkedBags + 1 })
+    }
+
+    checkedBagDesc = () => {
+        this.setState({ checkedBags: this.state.checkedBags - 1 })
+    }
+
+    handleToggleDuration = () => {
+        $('.toggle-duration-items').toggle(200)
+        $('.toggle-duration-img').toggleClass('down')
+    }
+
+    handleToggleDays = () => {
+        $('.toggle-days-items').toggle(200)
+        $('.toggle-days-img').toggleClass('down')
+    }
+
+    handleDuration = (event) => {
+        this.setState({ maxDuration: event.target.value })
     }
 
     render() {
@@ -101,7 +137,7 @@ class Transports extends Component {
 
                                             {/* Transport Toggle */}
                                             <div className="toggle-menu">
-                                                <div className="toggle-title" onClick={this.handleTransport}>
+                                                <div className="toggle-title" onClick={this.handleToggleTransport}>
                                                     <div className="d-flex">
                                                         <div><p className="mb-0">Transport</p></div>
                                                         <div className="ml-auto">
@@ -128,7 +164,7 @@ class Transports extends Component {
 
                                             {/* Bags Toggle */}
                                             <div className="toggle-menu">
-                                                <div className="toggle-title" onClick={this.handleBags}>
+                                                <div className="toggle-title" onClick={this.handleToggleBags}>
                                                     <div className="d-flex">
                                                         <div><p className="mb-0">Bags</p></div>
                                                         <div className="ml-auto">
@@ -142,13 +178,13 @@ class Transports extends Component {
                                                             <p className="mb-0"><i className="fas fa-suitcase-rolling mr-2"></i>Cabin bags</p>
                                                         </div>
                                                         <div className="px-1 py-2">
-                                                            <button type="button" className="btn border shadow-none btn-sm btn-light text-dark"><i className="fas fa-minus"></i></button>
+                                                            <button type="button" className="btn border shadow-none btn-sm btn-light text-dark" disabled={this.state.cabinBags < 1} onClick={this.cabinBagDesc}><i className="fas fa-minus"></i></button>
                                                         </div>
                                                         <div className="px-1 py-2">
-                                                            <input type="text" className="form-control form-control-sm shadow-none text-center" readOnly value="0" />
+                                                            <input type="text" className="form-control form-control-sm shadow-none text-center" readOnly value={this.state.cabinBags} />
                                                         </div>
                                                         <div className="px-1 py-2">
-                                                            <button type="button" className="btn border shadow-none btn-sm btn-light text-dark"><i className="fas fa-plus"></i></button>
+                                                            <button type="button" className="btn border shadow-none btn-sm btn-light text-dark" onClick={this.cabinBagInc}><i className="fas fa-plus"></i></button>
                                                         </div>
                                                     </div>
                                                     <div className="d-flex">
@@ -156,18 +192,61 @@ class Transports extends Component {
                                                             <p className="mb-0"><i className="fas fa-briefcase mr-2"></i>Checked bags</p>
                                                         </div>
                                                         <div className="px-1 py-2">
-                                                            <button type="button" className="btn border shadow-none btn-sm btn-light text-dark"><i className="fas fa-minus"></i></button>
+                                                            <button type="button" className="btn border shadow-none btn-sm btn-light text-dark" disabled={this.state.checkedBags < 1} onClick={this.checkedBagDesc}><i className="fas fa-minus"></i></button>
                                                         </div>
                                                         <div className="px-1 py-2">
-                                                            <input type="text" className="form-control form-control-sm shadow-none text-center" readOnly value="0" />
+                                                            <input type="text" className="form-control form-control-sm shadow-none text-center" readOnly value={this.state.checkedBags} />
                                                         </div>
                                                         <div className="px-1 py-2">
-                                                            <button type="button" className="btn border shadow-none btn-sm btn-light text-dark"><i className="fas fa-plus"></i></button>
+                                                            <button type="button" className="btn border shadow-none btn-sm btn-light text-dark" onClick={this.checkedBagInc}><i className="fas fa-plus"></i></button>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
                                             {/* End Bags Toggle */}
+
+                                            {/* Duration Toggle */}
+                                            <div className="toggle-menu">
+                                                <div className="toggle-title" onClick={this.handleToggleDuration}>
+                                                    <div className="d-flex">
+                                                        <div><p className="mb-0">Duration</p></div>
+                                                        <div className="ml-auto">
+                                                            <img src={DownArrowIcon} className="toggle-duration-img" alt="Rigth arrow" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div className="toggle-duration-items pt-3">
+
+                                                    <p className="mb-0">Max travel time</p>
+                                                    <small className="text-muted">up to {this.state.maxDuration} hours</small>
+                                                    <input type="range" min="1" max="100" value={this.state.maxDuration} className="range-slider" onChange={this.handleDuration} />
+                                                </div>
+                                            </div>
+                                            {/* End Duration Toggle */}
+
+                                            {/* Days Toggle */}
+                                            <div className="toggle-menu">
+                                                <div className="toggle-title" onClick={this.handleToggleDays}>
+                                                    <div className="d-flex">
+                                                        <div><p className="mb-0">Days</p></div>
+                                                        <div className="ml-auto">
+                                                            <img src={DownArrowIcon} className="toggle-days-img" alt="Rigth arrow" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div className="toggle-days-items pt-2">
+
+                                                    <button type="button" className="btn btn-sm btn-light shadow-sm text-danger rounded-circle">S</button>
+                                                    <button type="button" className="btn btn-sm btn-light shadow-sm text-danger rounded-circle">M</button>
+                                                    <button type="button" className="btn btn-sm btn-light shadow-sm text-danger rounded-circle">T</button>
+                                                    <button type="button" className="btn btn-sm btn-light shadow-sm text-danger rounded-circle">W</button>
+                                                    <button type="button" className="btn btn-sm btn-light shadow-sm text-danger rounded-circle">T</button>
+                                                    <button type="button" className="btn btn-sm btn-light shadow-sm text-danger rounded-circle">F</button>
+                                                    <button type="button" className="btn btn-sm btn-light shadow-sm text-danger rounded-circle">S</button>
+
+                                                </div>
+                                            </div>
+                                            {/* End Days Toggle */}
 
 
 
