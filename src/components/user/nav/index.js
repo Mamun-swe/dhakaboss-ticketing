@@ -55,7 +55,7 @@ class Nav extends Component {
         this.setState({ login: false })
         this.setState({ registration: true })
         this.setState({ forgot: false })
-        this.setState({ modalHeight: 550 })
+        this.setState({ modalHeight: 460 })
     }
 
     showForgot = () => {

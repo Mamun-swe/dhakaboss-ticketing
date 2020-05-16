@@ -1,7 +1,14 @@
 import React, { Component } from 'react';
 import './index.css';
-import BannerImg from '../../../assets/static/banner.jpg';
+import UserNav from '../nav/index';
+import Footer from '../footer/index';
 import { Link } from 'react-router-dom';
+// import $ from 'jquery';
+import { DatePicker } from 'antd';
+import 'antd/dist/antd.css';
+
+import BannerImg from '../../../assets/static/banner.jpg';
+
 
 import packageImg from '../../../assets/packages/eiffel.png';
 import ArrowIcon from '../../../assets/icons/arrow.png';
@@ -15,12 +22,27 @@ class Home extends Component {
         }
     }
 
+    startDateHandeler(date, dateString) {
+        console.log(date, dateString);
+    }
+
+    returnDateHandeler(date, dateString) {
+        console.log(date, dateString);
+    }
+
+    handleSubmit = (event) => {
+        event.preventDefault();
+        this.props.history.push('/transports');
+    }
+
     render() {
         const { packages } = this.state;
         return (
-
             <div className="home">
-                {/* Header */}
+                <UserNav />
+
+
+                {/* Header Search Form */}
                 <div className="header">
                     <div className="container">
                         <div className="row">
@@ -31,29 +53,29 @@ class Home extends Component {
                             <div className="col-12 col-lg-8 search-column px-lg-0">
                                 <div className="card border-0">
                                     {/* Form */}
-                                    <form>
+                                    <form onSubmit={this.handleSubmit}>
                                         <div className="form-row">
                                             {/* From journy */}
                                             <div className="form-group col-md-3">
-                                                <input type="text" className="form-control shadow-none" placeholder="From" />
+                                                <input type="text" className="form-control shadow-none start-destination-control" placeholder="From" />
                                                 <i className="far fa-circle"></i>
                                             </div>
 
                                             {/* To journey */}
                                             <div className="form-group col-md-3">
-                                                <input type="text" className="form-control shadow-none" placeholder="To" />
+                                                <input type="text" className="form-control shadow-none end-destination-control" placeholder="To" />
                                                 <i className="fas fa-map-marker-alt"></i>
                                             </div>
 
                                             {/* Start Date */}
                                             <div className="form-group col-md-2">
-                                                <input type="text" className="form-control shadow-none" placeholder="Start Date" />
+                                                <DatePicker className="form-control shadow-none start-date-control" placeholder="Start Date" onChange={this.startDateHandeler} />
                                                 <i className="fas fa-calendar-check"></i>
                                             </div>
 
                                             {/* Return Date */}
                                             <div className="form-group col-md-2">
-                                                <input type="text" className="form-control shadow-none" placeholder="Add Return" />
+                                                <DatePicker className="form-control shadow-none start-date-control" placeholder="Add return" onChange={this.returnDateHandeler} />
                                                 <i className="fas fa-calendar-check"></i>
                                             </div>
 
@@ -71,7 +93,7 @@ class Home extends Component {
                         </div>
                     </div>
                 </div>
-                {/* End Header */}
+                {/* End Header Search Form */}
 
                 {/* Travel Packages */}
                 <div className="travel-packages">
@@ -119,6 +141,8 @@ class Home extends Component {
                     </div>
                 </div>
                 {/* End Travel Packages */}
+
+                <Footer />
             </div>
         );
     }

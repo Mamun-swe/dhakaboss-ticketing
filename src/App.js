@@ -1,19 +1,27 @@
 import React from 'react';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
-import UserMaster from './components/user/master';
+
+import Home from './components/user/home/index';
+import Transports from './components/user/transports/index';
+
+
+
+import AdminMaster from './components/admin/master';
 
 function App() {
   return (
     <div className="App">
       <Router>
         <Switch>
-          <Route exact path="/" component={UserMaster} />
+          <Route exact path="/" component={Home} />
+          <Route exact path="/transports" component={Transports} />
+          <Route path="/admin" component={AdminMaster} />
         </Switch>
       </Router>
-     
+
     </div>
   );
 }

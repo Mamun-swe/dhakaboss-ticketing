@@ -1,0 +1,124 @@
+/* Search Column */
+
+.transports .header .search-column .form-control {
+    /* color: red; */
+    height: 40px;
+    font-size: 14px;
+    border: 1px solid red;
+    font-family: roboto-medium;
+    position: relative;
+    padding-left: 27px;
+    border-radius: 4px;
+}
+
+.transports .header .search-column .start-destination-control {
+    border: 2px solid red;
+}
+
+.transports .header .search-column .form-group i {
+    position: absolute;
+    top: 12px;
+    left: 13px;
+    font-size: 15px;
+    color: red;
+}
+
+.transports .header .search-column ::placeholder {
+    color: red;
+    opacity: 1;
+}
+
+.transports .header .search-column :-ms-input-placeholder {
+    color: red;
+}
+
+.transports .header .search-column ::-ms-input-placeholder {
+    color: red;
+}
+
+.transports .header .search-column .btn {
+    color: #fff;
+    height: 40px;
+    background: red;
+    font-family: roboto-medium;
+}
+
+.transports .header .search-column .ant-picker-suffix {
+    display: none;
+}
+
+/* End Search Column */
+
+/* Main Section */
+
+/* Filter */
+
+.main-section .filter-column .card {
+    border: 1px solid red;
+}
+
+.main-section .filter-column .card .card-header {
+    background: red;
+}
+
+.main-section .filter-column .card .card-header h6 {
+    font-family: roboto-medium;
+}
+
+.main-section .filter-column .card .card-body {
+    padding: 20px 5px;
+}
+
+/* Toggle */
+
+.main-section .filter-column .card .card-body .toggle-menu {
+    padding: 12px 7px;
+    border-bottom: 1px solid rgba(85, 85, 85, 0.11);
+}
+
+.main-section .filter-column .card .card-body .toggle-menu .toggle-title {
+    cursor: pointer;
+}
+
+.main-section .filter-column .card .card-body .toggle-menu .toggle-title p {
+    font-family: roboto-medium;
+    font-size: 15px;
+    color: #000;
+}
+
+/* Toggle Transport */
+
+.main-section .filter-column .card .card-body .toggle-menu .toggle-transport-items {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.main-section .filter-column .card .card-body .toggle-menu .toggle-transport-items .form-check-label {
+    font-size: 14px;
+    font-family: roboto-medium;
+}
+
+/* End Toggle Transport */
+
+/* Toggle Bags */
+
+.main-section .filter-column .card .card-body .toggle-menu .toggle-bags-items p {
+    font-size: 14px;
+    font-family: roboto-medium;
+}
+
+.main-section .filter-column .card .card-body .toggle-menu .toggle-bags-items .form-control {
+    width: 35px;
+}
+
+/* End Toggle Bags */
+
+.down {
+    -moz-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+/* End Filter */
+
+/* End Main Section */

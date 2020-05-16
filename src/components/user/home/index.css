@@ -61,13 +61,18 @@
 /* Search Column */
 
 .home .header .search-column .form-control {
-    color: red;
+    /* color: red; */
     height: 40px;
     font-size: 14px;
     border: 1px solid red;
     font-family: roboto-medium;
     position: relative;
     padding-left: 27px;
+    border-radius: 4px;
+}
+
+.home .header .search-column .start-destination-control {
+    border: 2px solid red;
 }
 
 .home .header .search-column .form-group i {
@@ -96,6 +101,10 @@
     height: 40px;
     background: red;
     font-family: roboto-medium;
+}
+
+.home .header .search-column .ant-picker-suffix{
+    display: none;
 }
 
 /* End Search Column */
