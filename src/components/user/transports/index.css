@@ -161,6 +161,20 @@
 
 /* End Toggle Duration */
 
+/* Toggle Time */
+
+.main-section .filter-column .card .card-body .toggle-menu .toggle-time-items {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.main-section .filter-column .card .card-body .toggle-menu .toggle-time-items .form-check-label {
+    font-size: 14px;
+    font-family: roboto-medium;
+}
+
+/* End Toggle Time */
+
 /* Toggle Days */
 
 .main-section .filter-column .card .card-body .toggle-menu .toggle-days-items .btn {
@@ -182,5 +196,38 @@
 }
 
 /* End Filter */
+
+/* Transports */
+
+/* Transport filter options */
+
+.transports .main-section .transport-filter-options-card {
+    border: 1px solid red;
+}
+
+.transports .main-section .transport-filter-options-card .card-body {
+    padding: 10px;
+}
+
+.transports .main-section .transport-filter-options-card .card-body .btn {
+    font-size: 15px;
+    font-family: roboto-bold;
+    text-transform: capitalize;
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+/* End Transport filter options */
+
+/* Result Card */
+
+.transports .main-section .result-card {
+    border: 1px solid red;
+}
+
+/* End Result Card */
+
+/* End Transports */
 
 /* End Main Section */

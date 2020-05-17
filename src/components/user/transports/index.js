@@ -8,6 +8,7 @@ import UserNav from '../nav/index';
 import Footer from '../footer/index';
 
 import DownArrowIcon from '../../../assets/icons/right.png';
+import DownArrow from '../../../assets/icons/down-arrow.png';
 
 class Transports extends Component {
     constructor(props) {
@@ -23,6 +24,7 @@ class Transports extends Component {
         $('.toggle-transport-items').hide()
         $('.toggle-bags-items').hide()
         $('.toggle-duration-items').hide()
+        $('.toggle-time-items').hide()
         $('.toggle-days-items').hide()
     }
 
@@ -54,6 +56,11 @@ class Transports extends Component {
     handleToggleDuration = () => {
         $('.toggle-duration-items').toggle(200)
         $('.toggle-duration-img').toggleClass('down')
+    }
+
+    handleToggleTime = () => {
+        $('.toggle-time-items').toggle(200)
+        $('.toggle-time-img').toggleClass('down')
     }
 
     handleToggleDays = () => {
@@ -128,7 +135,7 @@ class Transports extends Component {
 
 
                                 {/* Filter Column */}
-                                <div className="col-12 col-lg-3 filter-column pl-lg-0 pr-lg-2">
+                                <div className="col-12 col-lg-3 filter-column pl-lg-0 pr-lg-2 mb-3 mb-lg-0">
                                     <div className="card">
                                         <div className="card-header border-0 py-3">
                                             <h6 className="mb-0 text-white">Filter</h6>
@@ -224,6 +231,33 @@ class Transports extends Component {
                                             </div>
                                             {/* End Duration Toggle */}
 
+                                            {/* Time Toggle */}
+                                            <div className="toggle-menu">
+                                                <div className="toggle-title" onClick={this.handleToggleTime}>
+                                                    <div className="d-flex">
+                                                        <div><p className="mb-0">Time</p></div>
+                                                        <div className="ml-auto">
+                                                            <img src={DownArrowIcon} className="toggle-time-img" alt="Rigth arrow" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div className="toggle-time-items pt-2">
+                                                    <div className="form-check pl-4 pb-2">
+                                                        <input className="form-check-input" type="checkbox" name="exampleRadios" id="time1" value="option1" />
+                                                        <label className="form-check-label" htmlFor="time1">
+                                                            Start from AM
+                                                        </label>
+                                                    </div>
+                                                    <div className="form-check pl-4 pb-2">
+                                                        <input className="form-check-input" type="checkbox" name="exampleRadios" id="time2" value="option2" />
+                                                        <label className="form-check-label" htmlFor="time2">
+                                                            Start from PM
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            {/* End Time Toggle */}
+
                                             {/* Days Toggle */}
                                             <div className="toggle-menu">
                                                 <div className="toggle-title" onClick={this.handleToggleDays}>
@@ -248,12 +282,56 @@ class Transports extends Component {
                                             </div>
                                             {/* End Days Toggle */}
 
-
-
                                         </div>
                                     </div>
                                 </div>
                                 {/* End Filter Column */}
+
+
+                                {/* Results Column */}
+                                <div className="col-12 col-lg-6">
+
+                                    {/* Filter Transport */}
+                                    <div className="card transport-filter-options-card mb-2">
+                                        <div className="card-body">
+                                            <div className="d-flex">
+                                                <div className="flex-fill">
+                                                    <button type="button" className="btn shadow-none text-dark">Buses <img src={DownArrow} alt="..." /></button>
+                                                </div>
+                                                <div className="flex-fill">
+                                                    <button type="button" className="btn shadow-none text-dark">Train <img src={DownArrow} alt="..." /></button>
+                                                </div>
+                                                <div className="flex-fill">
+                                                    <button type="button" className="btn shadow-none text-dark">feri <img src={DownArrow} alt="..." /></button>
+                                                </div>
+                                                <div className="flex-fill">
+                                                    <button type="button" className="btn shadow-none text-dark">flight <img src={DownArrow} alt="..." /></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    {/* End Filetr Transport */}
+
+                                    {/* Results */}
+                                    <div className="card result-card mb-2">
+                                        <div className="card-body"></div>
+                                    </div>
+
+                                    <div className="card result-card mb-2">
+                                        <div className="card-body"></div>
+                                    </div>
+
+                                    <div className="card result-card mb-2">
+                                        <div className="card-body"></div>
+                                    </div>
+
+                                    <div className="card result-card mb-2">
+                                        <div className="card-body"></div>
+                                    </div>
+                                    {/* End Results */}
+
+                                </div>
+                                {/* End Results Column */}
 
 
 
