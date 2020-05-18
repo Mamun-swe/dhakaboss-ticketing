@@ -223,7 +223,73 @@
 /* Result Card */
 
 .transports .main-section .result-card {
-    border: 1px solid red;
+    border: 1px solid rgba(255, 0, 0, 0.192);
+}
+
+.transports .main-section .result-card .card-body {
+    padding: 13px 15px;
+}
+
+.transports .main-section .result-card .content .title h6 {
+    color: red;
+    font-weight: 900;
+    font-family: roboto-bold;
+}
+
+.transports .main-section .result-card .content .title p {
+    font-size: 13px;
+    font-family: roboto-regular;
+}
+
+.transports .main-section .result-card .content .title .line {
+    height: 1px;
+    width: 200px;
+    background: rgba(255, 0, 0, 0.192);
+}
+
+.transports .main-section .result-card .schedule {
+    font-family: roboto-regular;
+}
+
+.transports .main-section .result-card .schedule small {
+    font-size: 12px;
+}
+
+.transports .main-section .result-card .schedule small .time {
+    color: red;
+}
+
+.transports .main-section .result-card .schedule p {
+    font-family: roboto-medium;
+    font-size: 14px;
+    color: #000;
+}
+
+.transports .main-section .result-card .price img {
+    max-width: 150px;
+    max-height: 60px;
+    margin-bottom: 5px;
+}
+
+.transports .main-section .result-card .price h4 {
+    text-transform: uppercase;
+    font-family: roboto-bold;
+    color: red;
+}
+
+.transports .main-section .result-card .price .btn {
+    color: #fff;
+    background: red;
+    text-transform: capitalize;
+    font-family: roboto-bold;
+    font-size: 14px;
+    padding: 5px 30px;
+}
+
+@media(min-width: 576px) {
+    .transports .main-section .result-card .price {
+        text-align: right;
+    }
 }
 
 /* End Result Card */

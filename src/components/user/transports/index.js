@@ -9,6 +9,7 @@ import Footer from '../footer/index';
 
 import DownArrowIcon from '../../../assets/icons/right.png';
 import DownArrow from '../../../assets/icons/down-arrow.png';
+import TransportLogo from '../../../assets/transports_logo/biman.png';
 
 class Transports extends Component {
     constructor(props) {
@@ -16,7 +17,8 @@ class Transports extends Component {
         this.state = {
             cabinBags: 0,
             checkedBags: 0,
-            maxDuration: 0
+            maxDuration: 0,
+            filteredTransports: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10']
         }
     }
 
@@ -73,6 +75,7 @@ class Transports extends Component {
     }
 
     render() {
+        const { filteredTransports } = this.state;
         return (
             <div>
                 <UserNav />
@@ -312,22 +315,49 @@ class Transports extends Component {
                                     </div>
                                     {/* End Filetr Transport */}
 
+
+
                                     {/* Results */}
-                                    <div className="card result-card mb-2">
-                                        <div className="card-body"></div>
-                                    </div>
-
-                                    <div className="card result-card mb-2">
-                                        <div className="card-body"></div>
-                                    </div>
-
-                                    <div className="card result-card mb-2">
-                                        <div className="card-body"></div>
-                                    </div>
-
-                                    <div className="card result-card mb-2">
-                                        <div className="card-body"></div>
-                                    </div>
+                                    {
+                                        filteredTransports.length ?
+                                            filteredTransports.map(transport =>
+                                                <div className="card result-card mb-2" key={transport}>
+                                                    <div className="card-body">
+                                                        <div className="d-sm-flex">
+                                                            <div className="content">
+                                                                <div className="title mb-1">
+                                                                    <h6 className="text-capitalize mb-0">hanif express</h6>
+                                                                    <p className="text-muted text-capitalize mb-1">gabtali terminal</p>
+                                                                    <div className='line'></div>
+                                                                </div>
+                                                                <div className="schedule">
+                                                                    <div className="mb-2">
+                                                                        <small>
+                                                                            <span className="day text-muted text-capitalize mr-2">sat - jun 14</span>
+                                                                            <span className="time text-uppercase">08:30 pm</span>
+                                                                        </small>
+                                                                        <p className="text-capitalize mb-0">ghabtali bus terminal</p>
+                                                                    </div>
+                                                                    <div>
+                                                                        <small>
+                                                                            <span className="day text-muted text-capitalize mr-2">sat - jun 14</span>
+                                                                            <span className="time text-uppercase">08:30 pm</span>
+                                                                        </small>
+                                                                        <p className="text-capitalize mb-0">ghabtali bus terminal</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div className="ml-auto price">
+                                                                <img src={TransportLogo} className="img-fluid mt-2 mt-sm-0" alt="..." />
+                                                                <h4>TK. 900</h4>
+                                                                <button type="button" className="btn shadow-none">Book</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            ) :
+                                            null
+                                    }
                                     {/* End Results */}
 
                                 </div>
