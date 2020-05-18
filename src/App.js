@@ -6,8 +6,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 import Home from './components/user/home/index';
 import Transports from './components/user/transports/index';
-
-
+import Book from './components/user/book/index';
 
 import AdminMaster from './components/admin/master';
 
@@ -18,6 +17,7 @@ function App() {
         <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/transports" component={Transports} />
+          <Route exact path="/book/:transportId" component={Book} />
           <Route path="/admin" component={AdminMaster} />
         </Switch>
       </Router>

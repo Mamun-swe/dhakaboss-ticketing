@@ -10,6 +10,7 @@ import Footer from '../footer/index';
 import DownArrowIcon from '../../../assets/icons/right.png';
 import DownArrow from '../../../assets/icons/down-arrow.png';
 import TransportLogo from '../../../assets/transports_logo/biman.png';
+import { Link } from 'react-router-dom';
 
 class Transports extends Component {
     constructor(props) {
@@ -350,7 +351,7 @@ class Transports extends Component {
                                                             <div className="ml-auto price">
                                                                 <img src={TransportLogo} className="img-fluid mt-2 mt-sm-0" alt="..." />
                                                                 <h4>TK. 900</h4>
-                                                                <button type="button" className="btn shadow-none">Book</button>
+                                                                <Link to={`/book/${transport}`} type="button" className="btn shadow-none">Book</Link>
                                                             </div>
                                                         </div>
                                                     </div>
