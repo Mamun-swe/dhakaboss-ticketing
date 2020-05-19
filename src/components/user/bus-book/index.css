@@ -1,0 +1,235 @@
+.book h6 {
+    color: red;
+    font-family: roboto-medium;
+}
+
+/* Color Deraction */
+
+.color-direction .red-box {
+    background: #e29059;
+    width: 40px;
+    height: 20px;
+}
+
+.color-direction .primary-box {
+    background: #b0d7f1;
+    width: 40px;
+    height: 20px;
+}
+
+.color-direction .transparent-box {
+    width: 40px;
+    height: 20px;
+    background: rgba(255, 0, 0, 0.116);
+}
+
+.color-direction p {
+    font-size: 13px;
+    font-family: roboto-medium;
+}
+
+/* End Color Deraction */
+
+/* Seats Column */
+
+.book .bus-seats {
+    margin: auto;
+    border-radius: 6px;
+    border: 1px solid rgba(255, 0, 0, 0.192);
+}
+
+.book .bus-seats .btn {
+    font-family: roboto-bold;
+    text-transform: uppercase;
+    font-size: 13px;
+    color: brown;
+    background: rgba(255, 0, 0, 0.116);
+    border: 1px solid rgba(255, 0, 0, 0.205);
+}
+
+.book .bus-seats .gateBtn {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-left: 0;
+}
+
+/* Body */
+
+.book .bus-seats .body .lines {
+    display: inline-block;
+}
+
+.book .bus-seats .body .seat-line {
+    border-top: 2px solid rgba(255, 0, 0, 0.342);
+}
+
+.book .bus-seats .body .seat-line .btn {
+    float: left;
+    margin: 5px;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.book .bus-seats .body .seat-line .booked {
+    color: #fff;
+    background: #D35400;
+    border: 1px solid #D35400;
+}
+
+.book .bus-seats .body .seat-line .my-booked {
+    color: #fff;
+    background: #85C1E9;
+    border: 1px solid #85C1E9;
+}
+
+.book .bus-seats .body .center-street {
+    width: 50px;
+    background: rgba(255, 0, 0, 0.116);
+    margin-bottom: 5px;
+}
+
+.book .bus-seats .footer .btn {
+    margin: 5px;
+}
+
+/* End Body */
+
+@media(max-width: 400px) {
+    .color-direction {
+        width: 280px;
+        margin: auto;
+    }
+    .book .bus-seats {
+        width: 280px;
+    }
+    .book .bus-seats .body .seat-line {
+        width: 114px;
+    }
+    .book .bus-seats .body .seat-line .btn {
+        width: 45px;
+        padding: 5px;
+    }
+    .book .bus-seats .center-street {
+        height: 405px;
+    }
+    .book .bus-seats .footer .btn {
+        width: 45px;
+        padding: 5px 0px;
+    }
+}
+
+@media(min-width: 400px) {
+    .color-direction {
+        width: 340px;
+        margin: auto;
+    }
+    .book .bus-seats {
+        width: 340px;
+    }
+    .book .bus-seats .body .seat-line {
+        width: 144px;
+    }
+    .book .bus-seats .body .seat-line .btn {
+        width: 61px;
+    }
+    .book .bus-seats .center-street {
+        height: 426px;
+    }
+    .book .bus-seats .footer .btn {
+        width: 57px;
+    }
+}
+
+/* End Seats Column */
+
+/* Audit Column */
+
+.audit-column .header {
+    border-bottom: 2px solid red;
+}
+
+.audit-column .header img {
+    height: 70px;
+}
+
+.audit-column .header h5 {
+    font-family: roboto-bold;
+    margin-top: 30px;
+    margin-bottom: 0;
+    font-weight: 900;
+    color: red;
+}
+
+/* Depart Info */
+
+.audit-column .content-body .departing-info h6 {
+    font-size: 15px;
+    font-family: roboto-medium;
+}
+
+.audit-column .content-body .boder {
+    height: 1px;
+    width: 150px;
+    background: rgba(255, 0, 0, 0.342);
+}
+
+.audit-column .content-body .departing-info .title {
+    color: #000;
+    font-size: 16px;
+    font-family: roboto-bold;
+}
+
+.audit-column .content-body .departing-info .content {
+    font-size: 14px;
+    font-family: roboto-regular;
+}
+
+/* Payment Info */
+
+.audit-column .content-body .payment-info h6 {
+    font-size: 15px;
+    font-family: roboto-medium;
+}
+
+.audit-column .content-body .payment-info .table p {
+    font-size: 14px;
+    text-transform: capitalize;
+    font-family: roboto-regular;
+}
+
+.audit-column .content-body .payment-info .table h6 {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: roboto-bold;
+}
+
+/* Confirmation */
+
+.audit-column .content-body .confirmation .back-btn {
+    color: red;
+    border: 2px solid red;
+    font-family: roboto-bold;
+    padding: 5px 40px;
+    transition: 0.4s;
+}
+
+.audit-column .content-body .confirmation .back-btn:hover {
+    color: #fff;
+    background: red;
+}
+
+.audit-column .content-body .confirmation .continue-btn {
+    background: red;
+    font-family: roboto-bold;
+    padding: 6px 35px;
+    margin-left: 15px;
+}
+
+/* 
+@media(min-width: 992px) {
+    .audit-column {
+        border-left: 2px solid red;
+    }
+} */
+
+/* End Audit Column */
