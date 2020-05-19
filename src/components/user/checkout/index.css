@@ -1,0 +1,64 @@
+.checkout .progress-flow .card {
+    border: 1px solid rgba(255, 0, 0, 0.205);
+}
+
+.checkout .progress-flow .card p {
+    margin-bottom: 0;
+}
+
+.checkout .progress-flow .card p i {
+    font-size: 23px;
+    margin-top: 5px;
+}
+
+.success {
+    color: #28a745!important;
+}
+
+.checkout .progress-flow .card p span {
+    font-size: 18px;
+    font-family: roboto-medium;
+}
+
+.checkout h5 {
+    color: #000;
+    font-size: 17px;
+    font-family: roboto-bold;
+}
+
+.checkout .form-group label {
+    font-size: 14px;
+    color: #000;
+    font-family: roboto-regular;
+    margin-bottom: 0;
+}
+
+.checkout .form-group .form-control {
+    font-family: roboto-medium;
+    height: 45px;
+    font-size: 14px;
+}
+
+.checkout .form-group .form-control:focus {
+    border: 1px solid #17a2b8!important;
+}
+
+.checkout .input-group .form-control {
+    text-transform: capitalize;
+}
+
+.checkout .input-group .input-group-prepend .form-control {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.checkout .payment-method-card img{
+    height: 40px;
+}
+
+@media(min-width: 768px) {
+    .checkout .progress-flow .card ul li {
+        float: left;
+        padding-left: 15px;
+    }
+}

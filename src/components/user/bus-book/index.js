@@ -14,6 +14,12 @@ class Book extends Component {
         super(props);
         this.state = {}
     }
+
+    handleBooking = () => {
+        this.props.history.push('/checkout');
+    }
+
+
     render() {
         return (
             <div className="book">
@@ -218,7 +224,7 @@ class Book extends Component {
                                 {/* Confirmation Buttons */}
                                 <div className="confirmation mb-4">
                                     <Link to="/" className="btn shadow-none back-btn">Cancle</Link>
-                                    <button type="button" className="btn shadow-none text-white continue-btn">Continue</button>
+                                    <button type="button" className="btn shadow-none text-white continue-btn" onClick={this.handleBooking}>Continue</button>
                                 </div>
                             </div>
                         </div>
