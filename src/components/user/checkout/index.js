@@ -37,7 +37,7 @@ class Checkout extends Component {
                 <div className="container py-4">
                     <div className="row">
                         <div className="col-12 progress-flow px-lg-0 mb-5">
-                            <div className="card">
+                            <div className="card border-0">
                                 <div className="card-body">
                                     <div className="d-md-flex justify-content-center">
                                         <div><p className="text-muted pr-2 pr-lg-3" id="ticketController"><i className="far fa-circle mr-2"></i><span>Ticket Controller Info .....</span></p></div>
@@ -86,7 +86,7 @@ class Checkout extends Component {
                                                 <option value="3">Three</option>
                                             </select>
                                         </div>
-                                        <input type="number" min="11" className="form-control shadow-none" placeholder="01xxxxxxxxx" />
+                                        <input type="number" min="0" className="form-control shadow-none" placeholder="01xxxxxxxxx" />
                                     </div>
                                 </div>
 
