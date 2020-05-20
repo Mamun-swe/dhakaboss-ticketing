@@ -6,6 +6,7 @@ import UserNav from '../nav/index';
 import Footer from '../footer/index';
 
 import walletImg from '../../../assets/static/wallet.jpg';
+import paypalImg from '../../../assets/static/paypal.png';
 
 class Checkout extends Component {
     constructor(props) {
@@ -54,7 +55,7 @@ class Checkout extends Component {
                             </div>
 
                             {/* Payment Form */}
-                            <form method="post">
+                            <form>
                                 <h5 className="mb-3 text-info">Ticket Collector Info</h5>
 
                                 {/* Email */}
@@ -133,7 +134,7 @@ class Checkout extends Component {
 
 
                                 {/* Payment Method */}
-                                <div className="card payment-method-card">
+                                <div className="card payment-method-card mb-4">
                                     <div className="card-header p-3">
                                         <div className="d-flex">
                                             <div><h5 className="mb-0 text-muted">Payment</h5></div>
@@ -188,6 +189,22 @@ class Checkout extends Component {
                                         </table>
 
                                     </div>
+                                </div>
+
+                                {/* Method */}
+                                <div className="method mb-4">
+                                    <div className="header text-center mb-4 mb-lg-5">
+                                        <img src={paypalImg} alt="..." />
+                                        <p className="mb-3">pay with payPal</p>
+                                    </div>
+
+                                    <div className="form-group mb-4 mb-lg-5">
+                                        <label>Email or Mobile</label>
+                                        <input type="text" className="form-control shadow-none" placeholder="Enter your email or mobile" />
+                                    </div>
+
+                                    <button type="submit" className="btn btn-danger btn-block shadow-none text-white">Pay Now</button>
+
                                 </div>
 
 

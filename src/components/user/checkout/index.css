@@ -52,8 +52,29 @@
     border-bottom-right-radius: 0;
 }
 
-.checkout .payment-method-card img{
+.checkout .payment-method-card img {
     height: 40px;
+}
+
+.checkout .method .header {
+    border-bottom: 1px solid rgba(255, 0, 0, 0.192);
+}
+
+.checkout .method .header img {
+    height: 30px;
+    margin-bottom: 10px;
+}
+
+.checkout .method .header p {
+    color: #000;
+    font-size: 16px;
+    font-family: roboto-bold;
+}
+
+.checkout .btn {
+    height: 43px;
+    font-size: 15px;
+    font-family: roboto-medium;
 }
 
 @media(min-width: 768px) {
