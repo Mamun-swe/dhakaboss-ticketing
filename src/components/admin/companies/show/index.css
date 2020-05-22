@@ -1,0 +1,82 @@
+.company-show .company-info-card h5 {
+    font-family: roboto-bold;
+}
+
+.company-show .company-info-card p {
+    font-size: 14px;
+    text-transform: capitalize;
+    font-family: roboto-medium;
+}
+
+.company-show .transport-filter-card {
+    background: #fff;
+}
+
+.company-show .fixed_transport_filter_card {
+    position: fixed;
+    top: 69px;
+    left: 0;
+    width: 100%;
+    z-index: 8;
+    border-bottom: 1px solid #dfdfdf;
+    box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075)!important;
+}
+
+.company-show .transport-list .table thead p {
+    font-family: roboto-medium;
+}
+
+.company-show .transport-list .table tbody p {
+    font-size: 13px;
+    margin-top: 5px;
+    font-family: roboto-regular;
+}
+
+.company-show .transport-list .table tbody .btn {
+    font-size: 13px;
+    font-family: roboto-regular;
+}
+
+/* Transport Info Modal */
+
+.company-show .transport_info_modal {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    height: 100vh;
+    overflow-y: auto;
+    z-index: 999;
+    background: #fff;
+    transition: 0.4s;
+}
+
+.company-show .transport_info_modal .btn {
+    padding: 4px 5px;
+}
+
+.company-show .transport_info_modal .content .table h6 {
+    margin-bottom: 0;
+    text-transform: capitalize;
+    font-family: roboto-medium;
+}
+
+.company-show .transport_info_modal .content .table p {
+    margin-bottom: 0;
+    text-transform: capitalize;
+    font-family: roboto-regular;
+    font-size: 14px;
+}
+
+@media(max-width: 576px) {
+    .company-show .transport_info_modal {
+        width: 100%;
+    }
+}
+
+@media(min-width: 576px) {
+    .company-show .transport_info_modal {
+        width: 400px;
+    }
+}
+
+/* End Transport Info Modal */

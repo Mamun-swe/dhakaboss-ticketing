@@ -1,0 +1,48 @@
+.companies .filter-company {
+    position: fixed;
+    top: 69px;
+    left: 0;
+    width: 100%;
+    padding: 10px 0px;
+    background: #fff;
+    z-index: 8;
+}
+
+.companies .filter-company .form-control {
+    font-size: 13px;
+    font-family: roboto-regular;
+}
+
+.companies .break {
+    height: 50px;
+}
+
+/* Company List */
+
+.company-list .table thead p {
+    font-family: roboto-medium;
+}
+
+.company-list .table tbody p {
+    font-size: 13px;
+    margin-top: 5px;
+    font-family: roboto-regular;
+}
+
+.company-list .table tbody .btn {
+    font-size: 13px;
+}
+
+/* End Company List */
+
+@media(max-width: 576px) {
+    .companies .filter-company .form-control {
+        width: 150px;
+    }
+}
+
+@media(min-width: 576px) {
+    .companies .filter-company .form-control {
+        width: 250px;
+    }
+}

@@ -1,0 +1,17 @@
+.edit_company form{
+    font-family: roboto-regular;
+}
+
+.edit_company form label{
+    font-size: 12px;
+    margin-bottom: 0;
+}
+
+.edit_company form .form-control{
+    font-size: 14px;
+    height: 45px;
+}
+
+.edit_company form .btn{
+    height: 43px;
+}
