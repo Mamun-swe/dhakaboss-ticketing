@@ -8,6 +8,9 @@ import Dashboard from "./dashboard/index";
 import Companies from "./companies/index/index";
 import ShowCompany from "./companies/show/index";
 import EditCompany from "./companies/edit/index";
+import AdminBooking from "./booking/index";
+import BookingRequest from "./booking-request/index";
+import AllUsers from "./users/index";
 
 import BarIcon from "./../../assets/icons/bar.png";
 import CloseIcon from "./../../assets/icons/close.png";
@@ -72,6 +75,9 @@ class AdminMaster extends Component {
                 <div className="side-menu border-right">
                     <NavLink exact to="/admin/" className="btn shadow-none" activeClassName="is-active">dashboard</NavLink>
                     <NavLink exact to="/admin/companies" className="btn shadow-none" activeClassName="is-active">companies</NavLink>
+                    <NavLink exact to="/admin/booking" className="btn shadow-none" activeClassName="is-active">booking</NavLink>
+                    <NavLink exact to="/admin/booking-requests" className="btn shadow-none" activeClassName="is-active">booking Requests</NavLink>
+                    <NavLink exact to="/admin/users" className="btn shadow-none" activeClassName="is-active">Users</NavLink>
                 </div>
 
 
@@ -82,6 +88,9 @@ class AdminMaster extends Component {
                         <Route exact path="/admin/companies" component={Companies} />
                         <Route exact path="/admin/companies/:id" component={ShowCompany} />
                         <Route exact path="/admin/companies/:id/edit" component={EditCompany} />
+                        <Route exact path="/admin/booking" component={AdminBooking} />
+                        <Route exact path="/admin/booking-requests" component={BookingRequest} />
+                        <Route exact path="/admin/users" component={AllUsers} />
                     </Switch>
                 </div>
             </div>

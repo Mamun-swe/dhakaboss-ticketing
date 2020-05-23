@@ -1,0 +1,52 @@
+.admin_booking .filter-box {
+    position: fixed;
+    top: 69px;
+    left: 0;
+    width: 100%;
+    padding: 10px 0px;
+    background: #fff;
+    z-index: 8;
+}
+
+.admin_booking .filter-box .form-control {
+    font-size: 13px;
+    font-family: roboto-regular;
+}
+
+@media(max-width: 992px) {
+    .admin_booking .filter-box .form-control {
+        width: 100%;
+        margin-bottom: 8px;
+    }
+    .admin_booking .break {
+        height: 208px;
+    }
+}
+
+@media(min-width: 992px) {
+    .admin_booking .filter-box .form-control {
+        width: 200px;
+        margin-right: 8px;
+    }
+    .admin_booking .break {
+        height: 50px;
+    }
+}
+
+.admin_booking .table thead p {
+    font-family: roboto-medium;
+    margin-bottom: 0;
+}
+
+.admin_booking .table tbody p {
+    font-size: 13px;
+    margin-top: 5px;
+    font-family: roboto-regular;
+    text-transform: capitalize;
+    margin-bottom: 0;
+}
+
+.admin_booking .table tbody .btn {
+    font-size: 13px;
+    font-family: roboto-regular;
+}
