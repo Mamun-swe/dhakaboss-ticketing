@@ -1,0 +1,26 @@
+.users .options-menu {
+    position: fixed;
+    top: 69px;
+    left: 0;
+    width: 100%;
+    z-index: 8;
+    background: #fff;
+}
+
+.users .break {
+    height: 48px;
+}
+
+.users .table thead p {
+    font-family: roboto-medium;
+}
+
+.users .table tbody p {
+    font-size: 13px;
+    margin-top: 5px;
+    font-family: roboto-regular;
+}
+
+.users .table tbody .btn {
+    font-size: 13px;
+}

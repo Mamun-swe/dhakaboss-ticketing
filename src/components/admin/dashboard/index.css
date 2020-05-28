@@ -1,0 +1,26 @@
+.dashboard .card {
+    height: 120px;
+    background: #dfdfdf57;
+    border: 0;
+}
+
+.dashboard .card h4 {
+    color: blueviolet;
+    font-family: roboto-medium;
+}
+
+.dashboard .card h6 {
+    font-family: roboto-regular;
+}
+
+@media(max-width: 768px) {
+    .dashboard .card {
+        margin-bottom: 20px;
+    }
+}
+
+@media(min-width: 768px) {
+    .dashboard .card {
+        margin-bottom: 30px;
+    }
+}

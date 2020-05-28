@@ -77,6 +77,7 @@ class Show extends Component {
                                         <td className="text-center"><p className="mb-0">SL</p></td>
                                         <td className="text-center"><p className="mb-0">ID</p></td>
                                         <td className="text-center"><p className="mb-0">Type</p></td>
+                                        <td className="text-center"><p className="mb-0">Travel Road</p></td>
                                         <td className="text-center"><p className="mb-0">Your Booked Seat</p></td>
                                         <td className="text-center"><p className="mb-0">Avilable Seat</p></td>
                                         <td className="text-center"><p className="mb-0">Seat Price</p></td>
@@ -91,6 +92,7 @@ class Show extends Component {
                                                     <td className="text-center"><p className="mb-0">{transport}</p></td>
                                                     <td className="text-center"><p className="mb-0">181-35-277</p></td>
                                                     <td className="text-center"><p className="mb-0">AC</p></td>
+                                                    <td className="text-center"><p className="mb-0">dhaka - rajshahi</p></td>
                                                     <td className="text-center"><p className="mb-0">60</p></td>
                                                     <td className="text-center"><p className="mb-0">50</p></td>
                                                     <td className="text-center"><p className="mb-0">TK. 500</p></td>
