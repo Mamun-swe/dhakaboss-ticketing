@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/dhakaboss-ticketing/static/css/main.dfa8d7db.chunk.css",
+    "main.js": "/dhakaboss-ticketing/static/js/main.acc2c598.chunk.js",
+    "main.js.map": "/dhakaboss-ticketing/static/js/main.acc2c598.chunk.js.map",
+    "runtime-main.js": "/dhakaboss-ticketing/static/js/runtime-main.9c472b21.js",
+    "runtime-main.js.map": "/dhakaboss-ticketing/static/js/runtime-main.9c472b21.js.map",
+    "static/css/2.a5d7ed5b.chunk.css": "/dhakaboss-ticketing/static/css/2.a5d7ed5b.chunk.css",
+    "static/js/2.27182269.chunk.js": "/dhakaboss-ticketing/static/js/2.27182269.chunk.js",
+    "static/js/2.27182269.chunk.js.map": "/dhakaboss-ticketing/static/js/2.27182269.chunk.js.map",
+    "index.html": "/dhakaboss-ticketing/index.html",
+    "precache-manifest.e043cad492e51341a5eb02946248f17c.js": "/dhakaboss-ticketing/precache-manifest.e043cad492e51341a5eb02946248f17c.js",
+    "service-worker.js": "/dhakaboss-ticketing/service-worker.js",
+    "static/css/2.a5d7ed5b.chunk.css.map": "/dhakaboss-ticketing/static/css/2.a5d7ed5b.chunk.css.map",
+    "static/css/main.dfa8d7db.chunk.css.map": "/dhakaboss-ticketing/static/css/main.dfa8d7db.chunk.css.map",
+    "static/js/2.27182269.chunk.js.LICENSE.txt": "/dhakaboss-ticketing/static/js/2.27182269.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/dhakaboss-ticketing/static/media/Roboto-Regular.11eabca2.ttf",
+    "static/media/banner.jpg": "/dhakaboss-ticketing/static/media/banner.531e0772.jpg",
+    "static/media/biman.png": "/dhakaboss-ticketing/static/media/biman.9907c81e.png",
+    "static/media/eiffel.png": "/dhakaboss-ticketing/static/media/eiffel.175c1b9e.png",
+    "static/media/logo.png": "/dhakaboss-ticketing/static/media/logo.22936743.png",
+    "static/media/paypal.png": "/dhakaboss-ticketing/static/media/paypal.d7ddac68.png",
+    "static/media/wallet.jpg": "/dhakaboss-ticketing/static/media/wallet.7a0efa45.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9c472b21.js",
+    "static/css/2.a5d7ed5b.chunk.css",
+    "static/js/2.27182269.chunk.js",
+    "static/css/main.dfa8d7db.chunk.css",
+    "static/js/main.acc2c598.chunk.js"
+  ]
+}
