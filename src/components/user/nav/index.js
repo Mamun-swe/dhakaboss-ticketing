@@ -82,7 +82,7 @@ class Nav extends Component {
                                 <div className="d-flex justify-content-between">
                                     <div>
                                         <Link to="/">
-                                            <img src={Logo} className="img-fluid" alt="Company Logo" />
+                                            {/* <img src={Logo} className="img-fluid" alt="Company Logo" /> */}
                                         </Link>
                                     </div>
                                     <div className="d-none d-lg-block">
