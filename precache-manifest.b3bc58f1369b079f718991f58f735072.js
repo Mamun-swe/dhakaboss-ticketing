@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "7278fad0f43b84909047b4a8aa0eb52d",
+    "revision": "ef5d501d4db719b5afb7b468d509ca54",
     "url": "/dhakaboss-ticketing/index.html"
   },
   {
-    "revision": "d0e6d2bf4b950a589627",
+    "revision": "50d7be7ba577d963ef07",
     "url": "/dhakaboss-ticketing/static/css/2.a5d7ed5b.chunk.css"
   },
   {
-    "revision": "6e2a335bc178fe69e041",
+    "revision": "176a40b2db425f7f6eae",
     "url": "/dhakaboss-ticketing/static/css/main.dfa8d7db.chunk.css"
   },
   {
-    "revision": "d0e6d2bf4b950a589627",
-    "url": "/dhakaboss-ticketing/static/js/2.27182269.chunk.js"
+    "revision": "50d7be7ba577d963ef07",
+    "url": "/dhakaboss-ticketing/static/js/2.fb988d05.chunk.js"
   },
   {
     "revision": "4386012a6d334684338618496b7aac20",
-    "url": "/dhakaboss-ticketing/static/js/2.27182269.chunk.js.LICENSE.txt"
+    "url": "/dhakaboss-ticketing/static/js/2.fb988d05.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "6e2a335bc178fe69e041",
-    "url": "/dhakaboss-ticketing/static/js/main.acc2c598.chunk.js"
+    "revision": "176a40b2db425f7f6eae",
+    "url": "/dhakaboss-ticketing/static/js/main.5b7dca48.chunk.js"
   },
   {
     "revision": "9e2446f8d3fc34d27f66",

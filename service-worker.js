@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/dhakaboss-ticketing/precache-manifest.e043cad492e51341a5eb02946248f17c.js"
+  "/dhakaboss-ticketing/precache-manifest.b3bc58f1369b079f718991f58f735072.js"
 );
 
 self.addEventListener('message', (event) => {
