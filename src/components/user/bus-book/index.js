@@ -30,7 +30,7 @@ class Book extends Component {
 
                         {/* Bus Seat */}
                         <div className="col-12 col-lg-6 mb-4 mb-lg-0">
-                            <h6 className="mb-4">Choose your seat</h6>
+                            <h6 className="text-center mb-4">Choose your seat</h6>
                             {/* Color Direction */}
                             <div className="color-direction pb-2">
                                 <div className="d-flex mb-2">
