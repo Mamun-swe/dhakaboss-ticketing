@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ef5d501d4db719b5afb7b468d509ca54",
+    "revision": "57a4dcd35dcfd32b0786b2b35f11ce9d",
     "url": "/dhakaboss-ticketing/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/dhakaboss-ticketing/static/css/2.a5d7ed5b.chunk.css"
   },
   {
-    "revision": "176a40b2db425f7f6eae",
+    "revision": "73939a2114853625bd0e",
     "url": "/dhakaboss-ticketing/static/css/main.dfa8d7db.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/dhakaboss-ticketing/static/js/2.fb988d05.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "176a40b2db425f7f6eae",
-    "url": "/dhakaboss-ticketing/static/js/main.5b7dca48.chunk.js"
+    "revision": "73939a2114853625bd0e",
+    "url": "/dhakaboss-ticketing/static/js/main.c95a8c45.chunk.js"
   },
   {
     "revision": "9e2446f8d3fc34d27f66",
